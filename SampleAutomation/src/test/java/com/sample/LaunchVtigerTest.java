@@ -15,6 +15,7 @@ public class LaunchVtigerTest {
 	@Test
 	public void launchTest()
 	{
+		System.out.println("Test Started");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
@@ -53,6 +54,6 @@ public class LaunchVtigerTest {
 		}
 		driver.quit();
 		System.out.println("pass");
-
+		System.out.println("Test Finish");
 	}
 }
